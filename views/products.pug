@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Product List
+  if products.length
+    ul.product-list
+      each product in products
+        li.product-card
+          h2 
+            a(href=`/products/${product.id}`)= product.name
+          p Price: $#{product.price}
+          if product.description
+            p= product.description
+          a.button(href=`/products/${product.id}/edit`) Edit Product
+  else
+    p No products available yet.
+  a.button(href='/products/new') Add New Product

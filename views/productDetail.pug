@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= product.name
+  p Price: $#{product.price}
+  if product.description
+    p Description: #{product.description}
+  a.button(href=`/products/${product.id}/edit`) Edit Product
+  a.button(href='/products') Back to Product List
