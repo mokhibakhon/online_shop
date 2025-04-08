@@ -10,5 +10,29 @@
     "name": "banana",
     "price": "34",
     "description": "banan zo'r"
+  },
+  {
+    "id": 4,
+    "name": "dragon fruit",
+    "price": "34",
+    "description": "really sweet"
+  },
+  {
+    "id": 5,
+    "name": "orange",
+    "price": "23",
+    "description": "delicious"
+  },
+  {
+    "id": 6,
+    "name": "grapes",
+    "price": "31",
+    "description": "from Korea"
+  },
+  {
+    "id": 7,
+    "name": "strawberry",
+    "price": "37",
+    "description": "really sweet"
   }
 ]
