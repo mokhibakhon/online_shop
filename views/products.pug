@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  header
+    h1 Product List
+    .button-container
+      a.button(href='/products/new') Add New Product
+      a.button(href='/') Home
+  if products.length
+    .product-list
+      each product in products
+        .product-card
+          h2
+            a(href=`/products/${product.id}`)= product.name
+          p Price: $#{product.price}
+          if product.description
+            p= product.description
+          a.button(href=`/products/${product.id}/edit`) Edit Product
+  else
+    p.no-products No products available yet.

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Edit Product
+  form(action=`/products/${product.id}?_method=PUT` method='POST')
+    div.form-group
+      label(for='name') Product Name:
+      input(type='text', name='name', id='name', required, value=product.name)
+    div.form-group
+      label(for='price') Price:
+      input(type='number', name='price', id='price', required, step='0.01', value=product.price)
+    div.form-group
+      label(for='description') Description:
+      textarea(name='description', id='description')= product.description
+    div.form-group
+      button(type='submit') Update Product
+  form(action=`/products/${product.id}?_method=DELETE` method='POST', onsubmit="return confirm('Are you sure you want to delete this product?');")
+    button(type='submit') Delete Product
+  a.button(href=`/products/${product.id}`) Cancel
