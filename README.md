@@ -54,31 +54,32 @@ For your convenience and further exploration:
 Here’s an overview of how the project is organized. This structure helps keep the project clean and maintainable:
 ```
 online-shopping-platform/
-├── controllers/
-│   └── productController.js
-├── data/
-│   └── products.json
-├── node_modules/            
-├── public/
-│   └── styles/
-│       └── style.css
-├── routes/
-│   ├── index.js
-│   └── products.js
-├── services/
-│   └── productService.js
-├── views/
-│   ├── editProduct.pug
-│   ├── index.pug
-│   ├── layout.pug
-│   ├── newProduct.pug
-│   ├── productDetail.pug
-│   └── products.pug
-├── .gitignore
-├── app.js
-├── package-lock.json
-├── package.json
-└── README.md
+├── controllers/                 # contains the controller logic to handle requests and responses (for product-related operations using express and crud methods)
+│   └── productController.js     # handles product-specific routes and business logic (crud operations)
+├── data/                        # stores data files like json databases for quick and simple data management
+│   └── products.json            # a json file acting as an in-memory database for storing product info
+├── node_modules/                # holds installed npm packages (managed automatically by npm)
+├── public/                      # contains assets for the client, such as css, js, and images
+│   └── styles/                  # houses css files for styling the front end
+│       └── style.css            # the main css file that defines the website's visual design
+├── routes/                      # defines the url endpoints for the app, directing requests to appropriate controllers
+│   ├── index.js                 # manages general routes including the homepage (entry point)
+│   └── products.js              # handles product-related routes like listing, adding, editing, and deleting products
+├── services/                    # contains the business logic separate from route handling, improving code reusability
+│   └── productService.js        # centralizes product logic and data manipulation
+├── views/                       # contains pug templates for dynamic html rendering
+│   ├── editProduct.pug          # template for editing an existing product
+│   ├── index.pug                # template for the homepage
+│   ├── layout.pug               # the main template that provides a common layout (header, footer, etc.)
+│   ├── newProduct.pug           # template for adding a new product
+│   ├── productDetail.pug        # template for displaying detailed information of a single product
+│   └── products.pug             # template for listing all products in a formatted view
+├── .gitignore                   # specifies files and folders git should ignore (for example, node_modules)
+├── app.js                       # the main server file that configures the express app, middleware, and routes
+├── package-lock.json            # locks the specific versions of installed packages for consistency
+├── package.json                 # configuration file that lists dependencies, metadata, and npm scripts
+└── README.md                    # contains project documentation like setup instructions, features, and usage details
+
 ```
 Installed packages: Express, Pug, Body-parser, Method-override, Express-validator, Nodemon, Dotenv, UUID
 
