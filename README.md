@@ -47,7 +47,7 @@ Here’s a quick rundown of the main packages used in this project:
 ## Repository and Deployment
 For your convenience and further exploration:
 - **GitHub Repository:** [https://github.com/mokhibakhon/online_shop.git](https://github.com/mokhibakhon/online_shop.git)
-- **Hosted Application:** [https://your-deployment-url.com](https://your-deployment-url.com)  
+- **Hosted Application:**  https://online-shop-9np3.onrender.com/  
   *(Remember to replace this with your actual live deployment link once available!)*
 
 ## Project Structure
